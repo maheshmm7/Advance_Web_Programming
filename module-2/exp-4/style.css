@@ -1,0 +1,75 @@
+body{
+    background-color: white;
+}
+body{
+    background-color: aqua;
+    background-image: url("theOG.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1080px;
+    background-attachment: fixed;
+}
+.my_heading{
+    color:red;
+}
+#hello_world{
+    color: brown;
+
+}
+.hai{
+    color: black;
+}
+#hai{
+    color: violet;
+}
+a{
+    color:green;
+    font-size: x-large;
+    border-style: solid;
+    padding: 5px;
+    margin: 20px;
+}
+p>a{
+    color: fuchsia;
+
+}
+a:link{
+    background-color: rgb(200, 200, 227);
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+a:visited{
+    background-color: red;
+}
+p::first-letter{
+    font-size: 100px;
+}
+.cbum::first-letter{
+    font-size: 100px;
+
+}
+.cbum::first-line{
+    font-size: 50px;
+
+}
+h2::after{
+    content: " 70";
+
+}
+.students::after{
+    content: " 85";
+}
+h1{
+    color: aliceblue;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    color: antiquewhite;
+    border-style: solid;
+    background-color: blue;
+    background-image: url("download.jpeg");
+    background-position: top;
+}

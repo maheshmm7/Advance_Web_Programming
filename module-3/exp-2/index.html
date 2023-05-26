@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web service using Ajax and handle using JSON</title>
+	<script src="jquery.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        $("#btnGetData").click(function() {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                type: "GET",
+                dataType: "json",
+                success: function(data) {
+                    var output = "<ul>";
+                    $.each(data, function(index, value) {
+                        output += "<li>" + value.title + "</li>";
+                    });
+                    output += "</ul>";
+                    $("#divOutput").html(output);
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    alert("Error: " + textStatus + " - " + errorThrown);
+                }
+            });
+        });
+    });
+</script>
+<body>
+	<h1>AJAX and JSON Example</h1>
+	<button id="btnGetData">Get Data</button>
+	<div id="divOutput"></div>
+</body>
+</html>

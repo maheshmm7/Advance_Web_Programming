@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number of milliseconds between the two click </title>
+    <script src="jquery.js"></script>
+</head>
+  <script>
+    $(document).ready(function(){
+      var start = 0;
+      var end = 0;
+      $("p").on("click", function(event){
+        if (start == 0) {
+          start = new Date().getTime();
+        } else {
+          end = new Date().getTime();
+          var diff = end - start;
+          alert("Time between clicks: " + diff + " milliseconds");
+          start = 0;
+          end = 0;
+        }
+      });
+    });
+  </script>
+<body>
+    <center> <b> <p>Click me twice!</p> </b> </center>
+</body>
+</html>

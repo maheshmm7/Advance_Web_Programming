@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Code to Find the data passed with the on() </title>
+  </head>
+  <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("p").on("click", {name: "Mahesh Rangala", age: 20}, function(event){
+          alert("Name: " + event.data.name + "\nAge: " + event.data.age);
+        });
+        $("h1").on("click", {name: "Abhiram", age: 100}, function(event){
+          alert("Name: " + event.data.name + "\nAge: " + event.data.age);
+        });
+        $("h2").on("click", {name: "Girish", age: 16}, function(event){
+          alert("Name: " + event.data.name + "\nAge: " + event.data.age);
+        });
+      });
+    </script>
+  <body>
+  <center>  <h3>jQuery Code to Find the data passed with the on() </h3> </center>
+  <p>Click me!</p>
+  <h1>Click here </h1>
+  <h2>Click me tooo!</h2>
+  
+  </body>
+  </html>

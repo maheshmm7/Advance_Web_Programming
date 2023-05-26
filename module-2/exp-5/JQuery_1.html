@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.heading').text('Hey i am Mahesh');
+            $('.heading').css("color","red");
+            $('h2').css({"color":"blue","background-color":"black"})
+            $('#hide').click(function(){
+                $('p').hide(3000);
+            })
+            $('#show').click(function(){
+                $('p').show(3000);
+            })
+            $('#toggle').click(function(){
+                $('p').toggle(3000);
+            })
+            ('#anim').click(function(){
+                $('#box').animate({'opacity':'0.5','left':'130px'});
+                $('#box').animate({'opacity':'0.5','right':'130px'});
+            })
+        });
+
+        $(document).ready(function(){
+            $('.mahesh').text('Hey this is Mahesh');
+            $(".mahesh").css("color","black");
+            $(".mahesh").css("font-size","100px");
+            $('body').css("background-color","yellow");
+            $('.mahesh').css("background-color","red");
+
+        })
+    </script>
+    
+</head>
+<body>
+
+    <h2></h2>
+    <div id="box" style="width: 150px;height: 150px;background-color: brown;"></div>
+    <button id="anim">Animation</button>
+    <h1 class="heading">JQuery Classes</h1>
+    <h1 class="mahesh"></h1>
+    <h1></h1>
+    <h1></h1>
+    <p>hey</p>
+    <p>hey</p>
+    <p>hey</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Show and Hide</button>
+
+    <h2>Mahesh</h2>
+    
+
+    <p></p>
+    <script>
+        $('.heading').text('JQuery is Awesome');
+        $('.mahesh').text('JQuery Class');
+
+        $(document).ready(function(){
+            $('p').text('JQuery Class');
+        });
+
+    </script>
+</body>
+</html>

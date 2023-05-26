@@ -1,0 +1,18 @@
+
+body{
+    background-color: black;
+    background-image: url("space.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1080px;
+    background-attachment: fixed;
+}
+h1{
+    color: red;
+}
+p{
+    color: aliceblue;
+}
+h2{
+    color: wheat;
+}
